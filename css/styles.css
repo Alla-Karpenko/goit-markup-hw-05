@@ -685,8 +685,9 @@
   cursor: pointer;
 }
 .modal-svg {
+  width: 18px;
   height: 18px;
-  fill: #000000;
+  background: #000000;
 }
 
 /*======== END MODAL WINDOW ======*/
