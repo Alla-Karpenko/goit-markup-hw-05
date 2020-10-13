@@ -193,10 +193,7 @@
     
   }
   
-  .header-portfolio-mail-link,
-  .header-portfolio-tel-link {
-    color:  var(--subtitle-color);
-  }
+  
   .address:hover svg {
     fill: var(--accent-color);
   }
@@ -204,9 +201,7 @@
   .tel-svg {
     margin-right: 10px;
   }
-  .address-portfolio {
-    margin-left: auto;
-  }
+  
 
   /*======== END HEADER======*/
     
@@ -573,11 +568,10 @@
     box-sizing: border-box;
     
   }
-  .croup:hover, 
-  .croup:focus {
+  .project-item:hover {
     color: #ffffff;
     border: #757575;
-    box-shadow:  0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    box-shadow:  0px 0px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   }
   
   .croup:not(:nth-child(3n)) {
@@ -590,9 +584,8 @@
     display: flex;
     flex-wrap: wrap;
   }
-  .project:hover,
-  .project:focus {
-    color: #EEEEEE;;
+  .project-item:hover {
+    color: #EEEEEE;
     background-color: #ffffff;
   }
   
@@ -660,6 +653,7 @@
 
   .project-overlay:hover .description-overlay {
     transform: translateY(0px);
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .croup-overlay {
     position: relative;
