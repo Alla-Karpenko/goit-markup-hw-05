@@ -65,11 +65,9 @@
         
         <h1 class="hero-title">Эффективные решения<br>для вашего бизнеса</h1>
         
-        <button data-modal-open>Открыть модальное окно</button>
-
         <div class="hero-button">
-          <button class="button" type="button">Заказать услугу</button>
-          <button data-modal-close>Закрыть</button>
+          <button class="button" type="button" data-modal-open>Заказать услугу</button>
+          
         </div>
       </div>
     </section>
@@ -117,23 +115,32 @@
     </div>
 
     <!-- ABOUT US -->
-  <section class="about">
+   <section class="about">
     <div class="container"> 
     
       <h2 class="heading-title">Чем мы занимаемся</h2>
       <ul class="heading-box">
         <li class="heading list">
           <img src="./img/foto1.jpg" alt="человек печатает" width="370" height="294"/>
+          <div class="overlay">
+            <p class="label">Десктопные приложения</p>
+          </div>
         </li>
         <li class="heading list">
           <img src="./img/foto2.jpg" alt="телефон в руках" width="370" height="294"/>
+          <div class="overlay">
+            <p class="label">Мобильные приложения</p>
+          </div>
         </li>
         <li class="heading list">
           <img src="./img/foto3.jpg" alt="планшет в руках" width="370" height="294"/>
+          <div class="overlay">
+            <p class="label">Дизайнерские решения</p>
+          </div>
         </li>
       </ul>
     </div>
-  </section>
+   </section>
  
    
     <!-- COMMAND -->
@@ -408,14 +415,17 @@
      
     </footer>  
 
-      <div class="backdrop">
-        <div class="modal">
-          <button type="button" class="close-btn"></button>
-          <svg class="modal-svg">
-            <use hreff="./img/sprite.svg#icon-Vector-x"></use>
-          </svg>
-        </div>
-      </div>
+      <!-- MODAL WINDOW   -->
 
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>
+          <svg class="modal-svg">
+            <use href="./img/sprite.svg#icon-Vector-x"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+     <script src="./js/modal.js"></script>
   </body>
 </html>
